@@ -1,0 +1,8 @@
+platform :ios, '5.0'
+
+podspec :path => "../ZauberCommons.podspec"
+
+target :test, :exclusive => true do
+  link_with 'ZauberCommonsTests'
+  pod 'Kiwi', '~> 2.0.4'
+end
