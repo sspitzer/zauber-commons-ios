@@ -16,9 +16,9 @@
 		5F94F46816DBFDE3001830A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F94F46616DBFDE3001830A0 /* InfoPlist.strings */; };
 		5F94F47A16DC0091001830A0 /* UINavigationController+MultipleStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F47916DC0091001830A0 /* UINavigationController+MultipleStoryboard.m */; };
 		5F94F47D16DC08A3001830A0 /* UIViewController+MultipleStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F94F47C16DC08A3001830A0 /* UIViewController+MultipleStoryboard.m */; };
-		5FE90B7E16EE43FB0045C187 /* UIImage+ResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE90B7D16EE43FB0045C187 /* UIImage+ResizableImage.m */; };
-		5FE90B8116EE44670045C187 /* UIColor+RGBBuilders.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE90B8016EE44670045C187 /* UIColor+RGBBuilders.m */; };
-		5FE90B8416EE45980045C187 /* UIStoryboard+CreateControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE90B8316EE45980045C187 /* UIStoryboard+CreateControllers.m */; };
+		5FE90B8B16EE4A8D0045C187 /* UIColor+RGBBuilders.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE90B8616EE4A8D0045C187 /* UIColor+RGBBuilders.m */; };
+		5FE90B8C16EE4A8D0045C187 /* UIImage+ResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE90B8816EE4A8D0045C187 /* UIImage+ResizableImage.m */; };
+		5FE90B8D16EE4A8D0045C187 /* UIStoryboard+CreateControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE90B8A16EE4A8D0045C187 /* UIStoryboard+CreateControllers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +57,12 @@
 		5F94F47916DC0091001830A0 /* UINavigationController+MultipleStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+MultipleStoryboard.m"; path = "../../Classes/ios/UINavigationController+MultipleStoryboard.m"; sourceTree = "<group>"; };
 		5F94F47B16DC08A3001830A0 /* UIViewController+MultipleStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MultipleStoryboard.h"; path = "../../Classes/ios/UIViewController+MultipleStoryboard.h"; sourceTree = "<group>"; };
 		5F94F47C16DC08A3001830A0 /* UIViewController+MultipleStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MultipleStoryboard.m"; path = "../../Classes/ios/UIViewController+MultipleStoryboard.m"; sourceTree = "<group>"; };
-		5FE90B7C16EE43FB0045C187 /* UIImage+ResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizableImage.h"; sourceTree = "<group>"; };
-		5FE90B7D16EE43FB0045C187 /* UIImage+ResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizableImage.m"; sourceTree = "<group>"; };
-		5FE90B7F16EE44670045C187 /* UIColor+RGBBuilders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBBuilders.h"; sourceTree = "<group>"; };
-		5FE90B8016EE44670045C187 /* UIColor+RGBBuilders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBBuilders.m"; sourceTree = "<group>"; };
-		5FE90B8216EE45980045C187 /* UIStoryboard+CreateControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+CreateControllers.h"; sourceTree = "<group>"; };
-		5FE90B8316EE45980045C187 /* UIStoryboard+CreateControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+CreateControllers.m"; sourceTree = "<group>"; };
+		5FE90B8516EE4A8D0045C187 /* UIColor+RGBBuilders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+RGBBuilders.h"; path = "../../Classes/ios/UIColor+RGBBuilders.h"; sourceTree = "<group>"; };
+		5FE90B8616EE4A8D0045C187 /* UIColor+RGBBuilders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RGBBuilders.m"; path = "../../Classes/ios/UIColor+RGBBuilders.m"; sourceTree = "<group>"; };
+		5FE90B8716EE4A8D0045C187 /* UIImage+ResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ResizableImage.h"; path = "../../Classes/ios/UIImage+ResizableImage.h"; sourceTree = "<group>"; };
+		5FE90B8816EE4A8D0045C187 /* UIImage+ResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ResizableImage.m"; path = "../../Classes/ios/UIImage+ResizableImage.m"; sourceTree = "<group>"; };
+		5FE90B8916EE4A8D0045C187 /* UIStoryboard+CreateControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+CreateControllers.h"; path = "../../Classes/ios/UIStoryboard+CreateControllers.h"; sourceTree = "<group>"; };
+		5FE90B8A16EE4A8D0045C187 /* UIStoryboard+CreateControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+CreateControllers.m"; path = "../../Classes/ios/UIStoryboard+CreateControllers.m"; sourceTree = "<group>"; };
 		8EC7151190F3437DB6938212 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -158,13 +158,13 @@
 		5F94F47416DC0030001830A0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				5FE90B8516EE4A8D0045C187 /* UIColor+RGBBuilders.h */,
+				5FE90B8616EE4A8D0045C187 /* UIColor+RGBBuilders.m */,
+				5FE90B8716EE4A8D0045C187 /* UIImage+ResizableImage.h */,
+				5FE90B8816EE4A8D0045C187 /* UIImage+ResizableImage.m */,
+				5FE90B8916EE4A8D0045C187 /* UIStoryboard+CreateControllers.h */,
+				5FE90B8A16EE4A8D0045C187 /* UIStoryboard+CreateControllers.m */,
 				5F94F47E16DC1126001830A0 /* Navigation */,
-				5FE90B7C16EE43FB0045C187 /* UIImage+ResizableImage.h */,
-				5FE90B7D16EE43FB0045C187 /* UIImage+ResizableImage.m */,
-				5FE90B7F16EE44670045C187 /* UIColor+RGBBuilders.h */,
-				5FE90B8016EE44670045C187 /* UIColor+RGBBuilders.m */,
-				5FE90B8216EE45980045C187 /* UIStoryboard+CreateControllers.h */,
-				5FE90B8316EE45980045C187 /* UIStoryboard+CreateControllers.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -296,9 +296,9 @@
 			files = (
 				5F94F47A16DC0091001830A0 /* UINavigationController+MultipleStoryboard.m in Sources */,
 				5F94F47D16DC08A3001830A0 /* UIViewController+MultipleStoryboard.m in Sources */,
-				5FE90B7E16EE43FB0045C187 /* UIImage+ResizableImage.m in Sources */,
-				5FE90B8116EE44670045C187 /* UIColor+RGBBuilders.m in Sources */,
-				5FE90B8416EE45980045C187 /* UIStoryboard+CreateControllers.m in Sources */,
+				5FE90B8B16EE4A8D0045C187 /* UIColor+RGBBuilders.m in Sources */,
+				5FE90B8C16EE4A8D0045C187 /* UIImage+ResizableImage.m in Sources */,
+				5FE90B8D16EE4A8D0045C187 /* UIStoryboard+CreateControllers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
