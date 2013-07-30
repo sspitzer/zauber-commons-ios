@@ -19,7 +19,7 @@ typedef NSArray*(^ElementsGetter)();
 - (void)setViewForHeader:(ViewForSection)block;
 - (UIView *)viewForHeader;
 
-+ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier elementsWithBlock:(ElementsGetter)elementsGetter;
++ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier withBlock:(ElementsGetter)elementsBlock;
 + (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier elements:(NSArray *)elements;
 
 @end

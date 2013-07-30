@@ -11,17 +11,21 @@
 @interface ZCSection ()
 
 @property (strong, nonatomic) NSString *cellIdentifier;
-@property (copy, nonatomic) elementsGetter elementsGetterBlock;
-@property (copy, nonatomic) viewForSection sectionViewBuilder;
+@property (copy, nonatomic) ElementsGetter elementsGetterBlock;
+@property (copy, nonatomic) ViewForSection sectionViewBuilder;
 
 @end
 
 @implementation ZCSection
 
-+ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier elementsWithBlock:(elementsGetter)elementsGetter {
++ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier withBlock:(ElementsGetter)elementsGetter {
 
     if (!elementsGetter) {
+#ifdef DEBUG
         [NSException raise:@"Invalid block to get elements" format:@"The block to get elements musn't be nil"];
+#else
+        NSLog(@"Block should not be nil");
+#endif
     }
     
     ZCSection *section = [[[self class] alloc] init];
@@ -32,20 +36,21 @@
 }
 
 + (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier elements:(NSArray *)elements {
-    return [self sectionWithCellIdentifier:theCellIdentifier elementsWithBlock:^NSArray *{
+    return [self sectionWithCellIdentifier:theCellIdentifier withBlock:^NSArray *{
         return elements;
     }];
 }
 
-- (void)setViewForHeader:(viewForSection)block {
+- (void)setViewForHeader:(ViewForSection)block {
     self.sectionViewBuilder = block;
 }
 
 - (UIView *)viewForHeader {
-    if (!self.sectionViewBuilder) {
-        return nil;
+    UIView *view = nil;
+    if (self.sectionViewBuilder) {
+        view = self.sectionViewBuilder();
     }
-    return self.sectionViewBuilder();
+    return view;
 }
 
 - (NSArray *)elements {

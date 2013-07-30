@@ -75,6 +75,8 @@
     
     if ([cell conformsToProtocol:@protocol(ZCCustomizableCellProtocol)]) {
         [cell customizeCellWithObject:[self objectForIndexPath:indexPath]];
+    }else{
+        NSLog(@"The cell doesn't conform with the protocol ZCustomizableCellProtocol");
     }
     
     return cell;
