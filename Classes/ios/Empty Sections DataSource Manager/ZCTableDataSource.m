@@ -51,7 +51,7 @@
 
 - (UIView *) viewForHeaderSection:(NSInteger)section {
     ZCSection *theSection = self.sectionsNotEmpty[section];
-    return [theSection viewForHeader];
+    return [theSection headerViewForSection:section];
 }
 
 - (id) objectForIndexPath:(NSIndexPath *)indexPath {
