@@ -11,14 +11,14 @@
 @interface ZCSection ()
 
 @property (strong, nonatomic) NSString *cellIdentifier;
-@property (copy, nonatomic) ElementsGetter elementsGetterBlock;
+@property (copy, nonatomic) ElementsForSection elementsGetterBlock;
 @property (copy, nonatomic) ViewForSection sectionViewBuilder;
 
 @end
 
 @implementation ZCSection
 
-+ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier withBlock:(ElementsGetter)elementsGetter {
++ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier withBlock:(ElementsForSection)elementsGetter {
 
     if (!elementsGetter) {
 #ifdef DEBUG

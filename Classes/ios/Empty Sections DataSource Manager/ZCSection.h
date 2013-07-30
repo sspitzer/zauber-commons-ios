@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-typedef UIView*(^ViewForSection)(int section);
-typedef NSArray*(^ElementsGetter)();
+typedef UIView*(^ViewForSection)(NSInteger section);
+typedef NSArray*(^ElementsForSection)();
 
 @interface ZCSection : NSObject
 
@@ -19,7 +19,7 @@ typedef NSArray*(^ElementsGetter)();
 - (void)setViewForHeader:(ViewForSection)block;
 - (UIView *)headerViewForSection:(NSInteger)section;
 
-+ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier withBlock:(ElementsGetter)elementsBlock;
++ (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier withBlock:(ElementsForSection)elementsBlock;
 + (instancetype)sectionWithCellIdentifier:(NSString *)theCellIdentifier elements:(NSArray *)elements;
 
 @end
