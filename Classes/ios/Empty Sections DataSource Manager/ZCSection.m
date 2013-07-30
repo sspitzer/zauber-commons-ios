@@ -45,10 +45,10 @@
     self.sectionViewBuilder = block;
 }
 
-- (UIView *)viewForHeader {
+- (UIView *)headerViewForSection:(NSInteger)section {
     UIView *view = nil;
     if (self.sectionViewBuilder) {
-        view = self.sectionViewBuilder();
+        view = self.sectionViewBuilder(section);
     }
     return view;
 }
